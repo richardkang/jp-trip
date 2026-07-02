@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan Trip Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🗾 Japan Trip Planner</h1>
+    <p>Plan your perfect trip to Japan</p>
+  </header>
+
+  <main>
+    <section id="add-destination">
+      <h2>Add a Destination</h2>
+      <form id="destination-form">
+        <input
+          type="text"
+          id="destination-input"
+          placeholder="e.g. Tokyo, Kyoto, Osaka..."
+          required
+        />
+        <input
+          type="date"
+          id="date-input"
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="itinerary">
+      <h2>My Itinerary</h2>
+      <ul id="destination-list">
+        <!-- Destinations will be added here -->
+      </ul>
+      <p id="empty-message">No destinations added yet. Start planning!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>jp-trip &mdash; Your Japan travel companion</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
